@@ -40,4 +40,5 @@ group :test do
   gem 'cucumber-rails'
   gem 'capybara'
   gem 'factory_girl'
+  gem 'email_spec'
 end
