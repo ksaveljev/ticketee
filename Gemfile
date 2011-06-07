@@ -43,4 +43,5 @@ group :test do
   gem 'capybara'
   gem 'factory_girl'
   gem 'email_spec'
+  gem 'launchy'
 end
