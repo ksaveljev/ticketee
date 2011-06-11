@@ -9,6 +9,7 @@
     <% end %>
   </menu>
   <small>Created by <%= @ticket.user.email %></small>
+  <%= render :partial => @ticket.state if @ticket.state %>
   <%= simple_format( @ticket.description ) %>
 
   <% if @ticket.assets.exists? %>
