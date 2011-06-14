@@ -13,3 +13,9 @@ end
 Given /^I have run the seed task$/ do
   load Rails.root + "db/seeds.rb"
 end
+
+Then /^I should not see the "([^"]*)" element$/ do |css|
+  lambda { find(:css, css) }.should (
+    raise_error(Capybara::ElementNotFound, "Unable to find css \"#{css}\"")
+  )
+end
